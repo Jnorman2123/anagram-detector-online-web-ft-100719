@@ -11,6 +11,7 @@ class Anagram
     matched_words = []
     word_array = @word.split("").sort
     match_words.collect do |match_word|
+      sorted_match_word = []
       match_word = match_word.split("").sort!
       if match_word == word_array
         matched_words << match_word.join("")
