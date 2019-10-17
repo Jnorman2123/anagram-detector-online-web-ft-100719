@@ -12,7 +12,7 @@ class Anagram
     match_words.collect do |match_word|
       match_word = match_word.split("").sort!
       if match_word == word_array
-        return match_word
+        return match_word.join("")
       else
         return []
       end
