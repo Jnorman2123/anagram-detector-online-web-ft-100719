@@ -13,7 +13,7 @@ class Anagram
     match_words.collect do |match_word|
       match_word = match_word.split("").sort!
       if match_word == word_array
-        match_words  match_word
+        matched_words << match_word
       end
     end
   end
