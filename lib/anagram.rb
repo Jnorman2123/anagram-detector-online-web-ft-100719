@@ -14,7 +14,7 @@ class Anagram
       sorted_match_word = []
       sorted_match_word = match_word.split("").sort!
       if match_word == word_array
-        matched_words << match_word.join("")
+        matched_words << match_word
       end
     end
     matched_words
