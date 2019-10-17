@@ -16,7 +16,6 @@ class Anagram
       else
         return []
       end
-      binding.pry
     end
   end
 end
