@@ -17,6 +17,7 @@ class Anagram
           return split_word
         else
           []
+        end
       end
     end
   end
