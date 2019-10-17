@@ -11,11 +11,10 @@ class Anagram
     word_array = @word.split("").sort!
     match_words.collect do |match_word|
       match_word = match_word.split("").sort!
-        if match_word == word_array
-          return split_word
-        else
-          []
-        end
+      if match_word == word_array
+        return split_word
+      else
+        []
       end
     end
   end
