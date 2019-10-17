@@ -14,7 +14,7 @@ class Anagram
       if match_word == word_array
         return match_word
       else
-        []
+        return []
       end
     end
   end
