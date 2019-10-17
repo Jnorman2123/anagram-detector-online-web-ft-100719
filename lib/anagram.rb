@@ -11,8 +11,7 @@ class Anagram
     word_array = @word.split("").sort!
     match_words.collect do |match_word|
       match_word = match_word.split("").sort!
-      match_word.each do |split_word|
-        if (split_word - word_array).empty == true
+        if (match_word - word_array).empty == true
           return split_word
         else
           []
