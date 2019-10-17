@@ -8,10 +8,9 @@ class Anagram
 
   def match(match_words)
     word_array = @word.split("").sort!
-    split_match_words = []
-    match_words.each do |match_word|
-      split_match_words = match_word.split("").sort!
-      split_match_words.each do |split_word|
+    match_words.collect do |match_word|
+      match_word = match_word.split("").sort!
+      match_word.each do |split_word|
         if split_word == word_array
           return split_word
         else
