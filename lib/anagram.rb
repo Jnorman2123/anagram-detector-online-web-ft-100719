@@ -9,6 +9,7 @@ class Anagram
 
   def match(match_words)
     word_array = @word.split.sort!
+    binding.pry
     match_words.collect do |match_word|
       match_word = match_word.split.sort!
       if match_word == word_array
@@ -16,7 +17,6 @@ class Anagram
       else
         return []
       end
-      binding.pry
     end
   end
 end
